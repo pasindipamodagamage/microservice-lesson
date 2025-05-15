@@ -1,0 +1,28 @@
+#spring:
+#  application:
+#    name: eureka-server
+
+
+
+#    version:test
+
+#  nested
+#  more readable
+#  string, boolean, number
+#  lightweight
+
+#  list can add (-)
+#-
+#-
+#-
+
+server:
+  port: 8761
+
+eureka:
+  client:
+#server should not register utself as a service (client)
+    register-with-eureka: false
+#    prevent fetching its own service list
+    fetch-registry: false
+
